@@ -1,0 +1,67 @@
+.poster{
+display: flex;
+justify-content: center;
+border-radius: 8px;
+margin-top: 37px;
+padding:0px 125px;
+}
+
+.poster img{
+width: 100%;
+}
+
+.cr-cardtext{
+display: flex;
+align-items: center;
+gap: 15px;
+margin-left: 141px;
+margin-top: 91px;
+}
+
+.cr-cardtext p{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+margin: 0px;
+color: var(--graytext);
+}
+
+.flex-card {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 93px;
+    row-gap: 59px;
+    justify-content: center;
+    margin-top: 28px;
+    padding: 0px 128px;
+}
+
+.flex-card img {
+    width: 334px;           /* fixed width */
+    height: 273px;          /* fixed height */
+    background-color: var(--gray); /* placeholder color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    flex-grow: 1;           /* allows items to expand to fill remaining space */
+}
+
+@media (max-width: 800px) {
+  .poster {
+    padding: 0px 60px !important;
+  }
+
+  .flex-card {
+    padding: 0px 60px !important;
+  }
+
+  .cr-cardtext {
+    margin-left: 60px !important;
+  }
+}

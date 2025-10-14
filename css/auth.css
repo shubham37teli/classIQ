@@ -1,0 +1,94 @@
+/* sign up css */
+.input-btn-ques-signup-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.input-btn-group-signup {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 0 2rem;
+}
+/* sign up css */
+
+/* login css */
+.input-btn-ques-login-group {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.input-btn-group-login {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 2rem;
+}
+/* login css */
+
+/* common css */
+.login, .signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--white);
+}
+
+section {
+    background-color: var(--gray);
+    border-radius: 0.5rem;
+    width: 24.938rem;
+    height: 30.938rem;
+    text-align: center;
+    border-radius: 0.1rem;
+}
+
+.input-group {
+    display: flex;
+    gap: 1.3rem;
+    margin-top: 1rem;
+    flex-direction: column;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 0.7rem;
+    border: 0.125rem solid var(--black);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background-color: var(--gray);
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: var(--black);  
+    color: var(--black);
+}
+
+.input-group input::placeholder {
+    font-weight: 600;
+    color: var(--black);
+}
+
+.signup-login-btn {
+    background-color: var(--primary);
+    border: none;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+p {
+    letter-spacing: 0.05rem;
+    font-weight: 600;
+}
+
+a {
+    color: var(--black);
+}
+/* common css */
+

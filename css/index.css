@@ -32,7 +32,7 @@ color: var(--black);
     font-weight: bold;
 }
 .highlight{
-  background-image: url('/Assets/Vector\ 3.svg');
+  background-image: url('../Assets/Vector\ 3.svg');
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 100%;
@@ -49,7 +49,6 @@ color: var(--graytext2);
 
 .lp-btn{
 display: flex;
-
 font-weight: 400;
 font-size: 19px;
 letter-spacing: 0.02em;
@@ -147,7 +146,7 @@ color: var(--graycptext);
 /*Main-Text CSS*/
 /*Courses CSS*/
 .course{
-margin-top: 91px;
+margin-top: 5px;
 display: flex;
 justify-content: center;
 }
@@ -159,7 +158,7 @@ justify-content: center;
     flex-wrap: wrap;
     gap: 95px;
     width: var(--layoutwidth);
-    height: 461px;
+    padding: 86px 0px;
 }
 
 .cr-card{
@@ -168,7 +167,6 @@ justify-content: center;
     align-items: center;
     box-sizing: border-box;
     background: var(--gray);
-    /* Drop Shadow/200 */
     box-shadow: 0px 1px 4px rgba(12, 12, 13, 0.1), 0px 1px 4px rgba(12, 12, 13, 0.05);
     border-radius: 2rem;
     padding: 62px 78px;
@@ -226,39 +224,37 @@ color: var(--graycrtext);
 .join-now{
     display: flex;
     justify-content: center;
-    margin-top: 160px;
+    margin-top: 75px;
 }
 
 .jn-container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap:109px;
-    width: 83.68%;
+    gap:clamp(50px,7.57vw,109px );
+    width: var(--layoutwidth);
     height: 517px;
 }
 
 .jn-img img{
-        width: 100%;
-    height: 100%;
+    width: 100%;
     object-fit: cover;
     object-position: right bottom;
+}
+
+.jn-img, .jn-detail{
+    flex: 1;
 }
 
 .jn-detail{
     display: flex;
     flex-direction: column;
-    width: 548px;
 }
 
 .jn-textheading{
 font-family: 'Poppins';
-font-style: normal;
 font-weight: 700;
 font-size: 36px;
 line-height: 180%;
-/* identical to box height, or 65px */
-
 color: var(--graycrtext);
 }
 
@@ -287,40 +283,25 @@ color: var(--grayjntext);
     justify-content: center;
     gap:15px;
     margin-top: 39px;
-width: 229px;
-height: 69px;
-background: var(--primary);
-border-radius: 8px;
+    width: 229px;
+    height: 69px;
+    background: var(--primary);
+    border-radius: 8px;
 }
 
 .jn-btn a{
 font-family: 'Poppins';
-font-style: normal;
 font-weight: 600;
 font-size: 24px;
 line-height: 36px;
-/* identical to box height */
 color: var(--graytext);
 }
 /*Join-Now CSS*/
 
-footer {
-    width: 100%;
-    height: 360px;
-    margin-left: 8px;
-    
-    background-image: url('footer.png');
-}
-
-@media (max-width: 1124px) {
-    .jn-container{
-        width: 100%;
-    }
-}
-
-@media (max-width: 922px){
+@media (max-width: 998px){
     .jn-container{
         flex-direction: column;
+        height: auto;
     }
 }
 

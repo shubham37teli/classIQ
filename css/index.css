@@ -1,137 +1,103 @@
 /* Landing-Page CSS */
 .landing-page{
     display: flex;
-    align-items: center;
-    width: 100%;
+    justify-content: center;
     margin-top: 13px;
 }
 
-.lp-img{
-    margin-left: -339px;
-    width: 65.35%;
-    height: auto;
-    object-fit: cover;
-    object-position: right;
+.lp-container{
+    display: flex;
+    align-items: center;
+    width: var(--layoutwidth);
+    font-family: var(--font-Poppins);
 }
 
-.lp-left{
-padding-left: 120px;
-width: 58.19%;
+.lp-left, .lp-right{
 display: flex;
 flex-direction: column;
 align-items: flex-start;
+flex: 1;
 }
 
 .lp-text1{
-width: 94.57%;
 margin-left: 6px;
-margin-top: 134px;
-margin-right: 10px;
 
-font-family: 'Poppins';
-font-style: normal;
 font-weight: 300;
-font-size: 68px;
+font-size: 4.25rem;
 line-height: 102px;
 letter-spacing: -0.03em;
-
 color: var(--black);
 }
-
 .lp-text1 span{
     font-weight: bold;
 }
+.highlight{
+  background-image: url('/Assets/Vector\ 3.svg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100%;
+}
 
 .lp-text2{
-width: 100%;
 margin-top: 26px;
-
-font-family: 'Poppins';
-font-style: normal;
+font-family: var(--font-Poppins);
 font-weight: 400;
-font-size: 16px;
+font-size: 1rem;
 line-height: 24px;
-
 color: var(--graytext2);
-
 }
 
 .lp-btn{
 display: flex;
-justify-content: center;
-align-items: center;
-width: 215px;
-height: 53px;
+
+font-weight: 400;
+font-size: 19px;
+letter-spacing: 0.02em;
+padding: 12px 28px;
 margin-left: 1px;
 margin-top: 51px;
-
 background: var(--primary);
 border-radius: 8px;
 }
 
-.lp-btn a{
-width: 158px;
-height: 34px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 19px;
-line-height: 180%;
-letter-spacing: 0.02em;
-
-color: var(--black);
-}
-
-@media (min-width: 769px) and (max-width: 1182px){
-    .lp-left{
-        padding-left: 60px;
-    }
-    .lp-text1{
-        margin-top: 70px;
-    }
-    .lp-img{
-        margin-left: -150px !important;
-    }
-}
-
-
-@media (max-width: 880px) {
-    .landing-page{
-        flex-direction: column;
-        align-items: center;
-    }
-    .lp-text1{
-        margin-top: 0px;
-    }
-    .lp-left{
-        padding-left: 0px;
-        width: 85%;
-    }
-    .lp-img {
-        width: 100%;
-        align-self: flex-end;
-    }
-
+.lp-right img{
+    object-fit: cover;
+    object-position: right;
+    width: 158%;
+    margin-left: -220px;
 }
 
 @media (max-width: 1280px) {
-    .lp-img{
-         margin-left: -250px;
-         height: 80%;
-    }
     .lp-text1{
         font-size: 48px;
         line-height: 80px;
     }
 }
 
+@media (min-width: 880px) and (max-width: 1182px){
+    .lp-container{
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 880px) {
+    .lp-container{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .lp-right img{
+        width: 100%;
+        margin-left: 0px;
+    }
+}
 /*Landing-Page CSS*/
 /*Company CSS*/
 .company{
 margin-top: 115px;
 display: flex;
 justify-content: center;
+font-family: var(--font-Poppins);
 }
 
 .cp-container{
@@ -139,19 +105,15 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
-width: 82.64%;
-height: 145.54px;
+gap: 43px;
+width: var(--layoutwidth);
 }
 
 .cp-text {
-font-family: 'Poppins';
-font-style: normal;
 font-weight: 500;
-font-size: 28px;
+font-size: 1.75rem;
 line-height: 160%;
-/* identical to box height, or 45px */
 letter-spacing: 0.02em;
-
 color: var(--graycptext);
 }
 
@@ -160,32 +122,26 @@ display: flex;
 flex-wrap: wrap;
 width: 100%;
 justify-content: space-evenly;
-height: 57.62px;
 }
 
 .cp-img{
     height: max-content;
 }
-
 /*Company CSS*/
 /*Main-Text CSS*/
 .main-text{
 margin-top: 145px;
-
 font-family: 'Poppins';
-font-style: normal;
 font-weight: 500;
 font-size: 28px;
 line-height: 160%;
-/* identical to box height, or 45px */
 text-align: center;
 letter-spacing: 0.02em;
-
 color: var(--graycptext);
 }
 
 .main-text span{
-    font-weight: bold;
+    font-weight: bolder;
     color: var(--black);
 }
 /*Main-Text CSS*/
@@ -202,38 +158,30 @@ justify-content: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 95px;
-    width: 82.57%;
-    height: 467px;
+    width: var(--layoutwidth);
+    height: 461px;
 }
 
 .cr-card{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 333px;
-    height: 288px;
     box-sizing: border-box;
-background: var(--gray);
-/* Drop Shadow/200 */
-box-shadow: 0px 1px 4px rgba(12, 12, 13, 0.1), 0px 1px 4px rgba(12, 12, 13, 0.05);
-border-radius: 31px;
-padding: 62px 0px;
+    background: var(--gray);
+    /* Drop Shadow/200 */
+    box-shadow: 0px 1px 4px rgba(12, 12, 13, 0.1), 0px 1px 4px rgba(12, 12, 13, 0.05);
+    border-radius: 2rem;
+    padding: 62px 78px;
 }
 
 .cr-logo{
-
-width: 50px;
-height: 50px;
-border-radius: 50%;
-filter: drop-shadow(0px 1px 4px rgba(12, 12, 13, 0.1)) drop-shadow(0px 1px 4px rgba(12, 12, 13, 0.05));
-
+    filter: drop-shadow(0px 1px 4px rgba(12, 12, 13, 0.1)) drop-shadow(0px 1px 4px rgba(12, 12, 13, 0.05));
 }
 
 .cr-text{
 margin-top: 32px;
 width: 177px;
 height: 24px;
-
 font-family: 'Inter';
 font-style: normal;
 font-weight: 600;
@@ -370,18 +318,9 @@ footer {
     }
 }
 
-@media (max-width: 1439px) {
-    .join-now{
-        margin-top: 280px;
-    }
-}
-
 @media (max-width: 922px){
     .jn-container{
         flex-direction: column;
-    }
-    .join-now{
-        margin-top: 480px;
     }
 }
 

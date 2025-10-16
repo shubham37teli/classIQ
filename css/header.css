@@ -12,6 +12,12 @@
   --graycptext: #565656;
   --graycrtext: #373636;
   --grayjntext: #545454;
+
+  --font-Inter: 'Inter';
+  --font-Poppins: 'Poppins';
+
+  --layoutwidth: 82.64%;
+
 }
 
 body::-webkit-scrollbar {
@@ -31,25 +37,41 @@ text-decoration: none;
 /*Global CSS*/
 header{
     display: flex;
+    justify-content: center;
+    margin-top: 27px;
+}
+
+.hd-container{
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    height: 76px;
-    padding-inline: 8.68vw;
-    box-sizing: border-box;
-    margin-top: 27px;
+    width: var(--layoutwidth);
+    height: 4.75rem;
 }
 
 .header-left{
     display: flex;
     align-items: center;
+    gap: 66px;
 }
 
-.hl-container{
+.hl-card{
     display: flex;
     align-items: center;
-    width: 169px;
-    height: 49px;
+    gap: 13px;
+}
+
+.brand-name{
+    font-family: var(--font-Inter);
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+.hd-nav{
+    font-family: var(--font-Poppins);
+    font-weight: 400;
+    font-size: 1.12rem;
+    color: var(--graytext);
 }
 
 .header-right{
@@ -57,82 +79,32 @@ header{
     gap: 31px;
 }
 
-.brand-name{
-    width: 107px;
-    height: 34px;
-    margin-left: 13px;
-
-    font-family: 'Inter';
-    font-weight: 700;
-    font-size: 28px;
-}
-
-nav{
-    width: 76px;
-    height: 27px;
-    margin-left: 66px;
-
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-size: 18px;
-
-    color: var(--graytext);
-}
-
 .btn{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 11px 26px;
-    box-sizing: border-box;
     background: var(--black);
-    border-radius: 8px;
-}
-
-.btn a{
-    font-family: 'Inter';
+    border-radius: 0.5rem;
+    font-family: var(--font-Inter);
     font-weight: 600;
-    font-size: 18px;
-
+    font-size: 1.12rem;
     color: var(--white);
-}
-
-.btn-primary{
-    width: 101px;
-    height: 44px;
-}
-
-.btn-secondary{
-    width: 116px;
-    height: 44px;
+    padding: 11px 26px;
 }
 
 .hamburger-icon {
   display: none;
-  font-size: 28px;
+  font-size: 1.75rem;
   cursor: pointer;
   color: var(--black);
 }
 
-.header-right,
-.hamburger-icon {
-  transition: all 0.3s ease;
-}
-
 @media (max-width: 800px) {
-  .header-right {
+  .header-right, .brand-name {
     display: none;
   }
-
   .hamburger-icon {
     display: block;
   }
-
-  .brand-name {
-    display: none;
-  }
-
-  nav {
-    margin-left: -90px;
+  .header-left{
+    gap: 26px;
   }
 }

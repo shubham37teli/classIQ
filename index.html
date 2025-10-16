@@ -3,40 +3,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ClassIQ</title>
-    <link rel="stylesheet"  href="css/header.css"></stylesheet>
-    <link rel="stylesheet"  href="css/index.css"></stylesheet>
+    <link rel="stylesheet"  href="css/header.css"></link>
+    <link rel="stylesheet"  href="css/index.css"></link>
     <script src="index.js" defer></script>
   </head>
   <body>
     <header>
+      <div class="hd-container">
         <div class="header-left">
-            <a class="hl-container" href="index.html">
+            <a class="hl-card" href="index.html">
               <img src="Assets/Group 2827.png" alt="ClassIQ Logo" class="logo-icon">
               <div class="brand-name">ClassIQ</div>
             </a>
-            <nav>
+            <nav class="hd-nav">
               <a href="Courses.html">Cources</a>
             </nav>
         </div>
         <div class="header-right">
-            <div class="btn btn-primary"><a href="Login.html">Login</a></div>
-            <div class="btn btn-secondary"><a href="Signup.html">SignUp</a></div>
+            <div class="btn"><a href="Login.html">Login</a></div>
+            <div class="btn"><a href="Signup.html">SignUp</a></div>
         </div> 
         <div class="hamburger-icon">&#9776;</div>
+      </div>
     </header>
 
     <main>
-      <div class="landing-page">
-        <div class="lp-left">
-            <div class="lp-text1">Empower Your Learning Journey with <span>ClassIQ</span></div>
-            <div class="lp-text2">Unlock a world of knowledge and skills with our innovative online courses, expert instructors, and interactive learning tools.and skills with our innovative online courses, expert instructors, and interactive learning tools.</div>
-            <div class="lp-btn"><a href="/courses">Explore Cources</a></div>
+      <section class="landing-page">
+        <div class="lp-container">
+          <div class="lp-left">
+              <div class="lp-text1">Empower Your Learning Journey with <span class="highlight">ClassIQ</span></div>
+              <div class="lp-text2">Unlock a world of knowledge and skills with our innovative online courses, expert instructors, and interactive learning tools.and skills with our innovative online courses, expert instructors, and interactive learning tools.</div>
+              <div class="lp-btn"><a href="Courses.html">Explore Cources</a></div>
+          </div>
+          <div class="lp-right"><img src="Assets/Image 4.png" alt=""></div>
         </div>
-        <img class="lp-img" src="Assets/Image 4.png" alt="">
-        
-      </div>
+      </section>
 
-      <div class="company">
+      <section class="company">
         <div class="cp-container">
             <div class="cp-text">Trusted by 5,000+ Companies Worldwide</div>
             <div class="cp-logo">
@@ -47,7 +50,7 @@
                 <img class="cp-img" src="Assets/facebook.png" alt="">
             </div>
         </div>
-      </div>
+      </section>
 
       <div class="main-text">Certified Cources for <span>Professionals</span></div>
 
@@ -56,17 +59,17 @@
             <div class="cr-card">
                 <div  class="cr-logo"><img src="Assets/course logo.png" alt=""></div>
                 <div class="cr-text">Web Development</div>
-                <div class="cr-btn"><a href="/course">View Course</a></div>
+                <div class="cr-btn"><a href="Courses.html">View Course</a></div>
             </div>
             <div class="cr-card">
                 <div  class="cr-logo"><img src="Assets/course logo.png" alt=""></div>
                 <div class="cr-text">Data Science</div>
-                <div class="cr-btn"><a href="/course">View Course</a></div>
+                <div class="cr-btn"><a href="Courses.html">View Course</a></div>
             </div>
             <div class="cr-card">
                 <div  class="cr-logo"><img src="Assets/course logo.png" alt=""></div>
                 <div class="cr-text">App Development</div>
-                <div class="cr-btn"><a href="/course">View Course</a></div>
+                <div class="cr-btn"><a href="Courses.html">View Course</a></div>
             </div> 
         </div>
       </div>
@@ -79,12 +82,12 @@
                 <div class="jn-text"><img src="Assets/Group 128.png" alt="">Flexible Learning</div>
                 <div class="jn-text"><img src="Assets/Group 2822.png" alt="">Expert Instructors</div>
                 <div class="jn-text"><img src="Assets/Group 2816.png" alt="">Interactive Community</div>
-                <div class="jn-btn"><img src="Assets/Vector.png" alt=""><a href="">Join Now</a></div>
+                <div class="jn-btn"><img src="Assets/Vector.png" alt=""><a href="Signup.html">Join Now</a></div>
             </div>
         </div>
       </div>
     </main>
 
-    <footer class="site-footer"></footer>
+    <!-- <footer class="site-footer"></footer> -->
   </body>
 </html>

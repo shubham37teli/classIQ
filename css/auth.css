@@ -40,10 +40,11 @@
 section {
     background-color: var(--gray);
     border-radius: 0.5rem;
-    width: 24.938rem;
-    height: 30.938rem;
+    width: 24.93rem;
+    height: 30.93rem;
     text-align: center;
     border-radius: 0.1rem;
+    margin: 10px;
 }
 
 .input-group {
@@ -87,8 +88,9 @@ p {
     font-weight: 600;
 }
 
-a {
+p a {
     color: var(--black);
+    text-decoration: underline;
 }
 /* common css */
 

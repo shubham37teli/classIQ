@@ -59,7 +59,7 @@ footer{
 }
 
 .bussiness, .Careers, .subscribe{
-    font-family: 'Poppins';
+    font-family: var(--font-Poppins);
     color: var(--graycrtext);
 }
 

@@ -1,67 +1,126 @@
 .poster{
 display: flex;
 justify-content: center;
-border-radius: 8px;
-margin-top: 37px;
-padding:0px 125px;
+border-radius: .5rem;
+margin-top: 2.25rem;
 }
 
-.poster img{
-width: 100%;
+.pt-container{
+  display: flex;
+  align-items: center;
+  width: var(--layoutwidth);
+  background-color: var(--gray);
+}
+
+.pt-text, .pt-img{
+  flex: 1;
+}
+
+.pt-text{
+  display: flex;
+  flex-direction: column;
+  padding: 2.25rem;
+  font-family: var(--font-Poppins);
+}
+
+h2, p, h1{
+  margin: 0px;
+}
+
+.pt-text h2{
+font-weight: 600;
+font-size: 2rem;
+line-height: 3rem;
+color: var(--graytext);
+}
+
+.pt-text p{
+  font-size: 1.5rem;
+}
+
+.pt-text ul{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.pt-text li span{
+  background-color: var(--primary);
+}
+
+.pt-text h1 span{
+  font-size: 3rem;
+  color: var(--graytext);
+  border-bottom: 5px solid var(--primary);
+}
+
+.pt-img img{
+  object-fit: cover;
+  object-position: right bottom;
+  width: 100%;
+  height: 100%;
+}
+
+.cr-heading{
+  display: flex;
+  justify-content: center;
 }
 
 .cr-cardtext{
 display: flex;
 align-items: center;
 gap: 15px;
-margin-left: 141px;
 margin-top: 91px;
+width: var(--layoutwidth);
 }
 
 .cr-cardtext p{
-font-family: 'Poppins';
-font-style: normal;
+font-family: var(--font-Poppins);
 font-weight: 600;
-font-size: 32px;
-line-height: 48px;
-/* identical to box height */
-margin: 0px;
+font-size: 2rem;
+line-height: 3rem;
 color: var(--graytext);
 }
 
-.flex-card {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 93px;
-    row-gap: 59px;
-    justify-content: center;
-    margin-top: 28px;
-    padding: 0px 128px;
+.courses{
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
 }
 
-.flex-card img {
-    width: 334px;           /* fixed width */
-    height: 273px;          /* fixed height */
-    background-color: var(--gray); /* placeholder color */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    object-fit: cover;
-    font-size: 1.5rem;
-    border-radius: 12px;
-    flex-grow: 1;           /* allows items to expand to fill remaining space */
+.grid-card{
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  width: var(--layoutwidth);
+  gap: 2.25rem;
 }
 
-@media (max-width: 800px) {
-  .poster {
-    padding: 0px 60px !important;
-  }
+.grid-card img{
+  width: 100%;
+  height: 11rem;
+  object-fit: cover;
+  border-radius: 12px;
+}
 
-  .flex-card {
-    padding: 0px 60px !important;
+@media (max-width: 980px) {
+  .pt-container{
+    flex-direction: column;
   }
-
-  .cr-cardtext {
-    margin-left: 60px !important;
+  .pt-text{
+    align-self: flex-start;
+    min-width: 0px;
+    padding: 18px;
   }
 }
+
+@media (min-width: 768px) {
+  .grid-card{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-card{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
